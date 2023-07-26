@@ -1,13 +1,318 @@
 body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* MyNavbar.css */
+.navbar {
+  background-color: #231f20;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Align navbar brand and links on opposite ends */
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 20px;
+  color: #18b0c5;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  color: #cfd0d0;
+  text-decoration: underline;
+}
+
+/* Align the navbar links to the right */
+.navbar-links {
+  margin-left: auto;
+}
+
+/* Home component */
+.home-container {
+  padding: 200px 100px;
+  display: flex;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 900px;
+}
+
+.home-heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.name {
+  color: #007bff;
+  font-size: larger;
+}
+
+.home-introduction {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.home-contact {
+  font-size: 16px;
+  font-style: italic;
+  color: #ffd700;
+}
+
+.profile-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* About.css */
+
+.about-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  min-height: 1000px;
+}
+
+.about-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon-container {
+  background-color: #007bff;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.skill-name-container {
+  font-size: 20px;
+  text-align: center;
+}
+
+.skills-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 10px 8px 0 -4px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.category-title {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 25px;
+}
+
+/* Projects component */
+/* Projects component */
+.projects-container {
+  margin: 0 20px;
+}
+
+.project-item {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-align: center;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.project-technologies {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #444c70;
+}
+
+.project-links a {
+  margin-right: 10px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.project-links a:hover {
+  color: #0056b3;
+}
+
+.project-screenshot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.project-screenshot {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.screenshot-buttons {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.screenshot-button-left {
+  margin-right: 10px;
+}
+
+.screenshot-button-right {
+  margin-left: 10px;
+}
+
+/* Global styles for the Contact component */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url("images/contactbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding: 0 60px;
+}
+
+.contact-content-container {
+  background-image: linear-gradient(
+    rgba(112, 88, 68, 0.9),
+    rgba(112, 88, 68, 0.9)
+  );
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #d4bfa3;
+}
+
+.contact-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #d8d9ea;
+}
+
+.contact-link {
+  color: #92aee6;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  color: #6ea0d4;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #d8d9ea;
+}
+
+.contact-link {
+  color: #d8d9ea;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  color: #6ea0d4;
 }
