@@ -46,9 +46,26 @@ const About = () => {
     <div className="about-container">
       <div className="about-profile">
         <div className="about-content">
-          <h3>About Me</h3>
-          <p className="about-info">Education: Deep Dive Learning Academy</p>
-          <h3>Skills:</h3>
+          <h3 className="about-heading">About Me</h3>
+          <p className="about-passion">
+            My passion for web development was ignited by the opportunity it
+            presented to test my problem-solving skills and unleash my
+            creativity. As someone deeply interested in technology and coding, I
+            was drawn to the ever-evolving nature of the field, where there is
+            always something new to learn and explore. During my education at{" "}
+            <span className="education">Deep Dive Learning Academy</span>, I
+            gained a solid foundation in web development principles and
+            practices. Completing my first website was a moment of great
+            accomplishment and excitement, as it allowed me to witness the
+            tangible results of my efforts. What I enjoy most about web
+            development is the constant challenge it presents. Each project
+            pushes me to think critically, apply my skills, and discover
+            innovative solutions. The dynamic and ever-changing landscape of web
+            development keeps me engaged and motivated, as I embrace the
+            opportunity to continuously grow and improve as a developer.
+          </p>
+
+          <h3 className="about-heading">Skills:</h3>
           <div className="skills-list-container">
             <div className="skills-category-container">
               <h4 className="category-title">Front-end</h4>
