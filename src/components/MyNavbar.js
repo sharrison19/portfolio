@@ -1,26 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import initials from "../images/initials.jpg";
 
 function MyNavbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <img src={initials} alt="initials" className="navbar-brand" />
+        <Link to="/">
+          <img src={initials} alt="initials" className="navbar-brand" />
+        </Link>
         <ul className="navbar-links">
           <li className="nav-item">
-            <a href="#about" className="nav-link">
-              About Me
-            </a>
+            <Link to="/about">About</Link>
           </li>
           <li className="nav-item">
-            <a href="#projects" className="nav-link">
-              Projects
-            </a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link">
-              Contact
-            </a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>

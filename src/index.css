@@ -33,17 +33,16 @@ body {
   padding: 0;
 }
 
-.nav-item {
+.nav-item a {
   margin: 0 20px;
   color: #18b0c5;
-  text-decoration: none;
   font-size: 20px;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
   color: #cfd0d0;
-  text-decoration: underline;
 }
 
 /* Align the navbar links to the right */
@@ -69,7 +68,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the tint color and opacity */
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
@@ -137,7 +136,7 @@ body {
 .about-passion {
   font-size: 18px;
   font-style: italic;
-  color: #ffd700;
+  color: #cfd0d0;
   margin-bottom: 20px;
   line-height: 1.6;
   font-weight: bold;
@@ -250,7 +249,7 @@ body {
   margin: 50px 0;
 }
 
-.project-title {
+.projects-title {
   font-weight: bold;
   overflow-wrap: break-word;
   font-size: 40px;
@@ -300,14 +299,6 @@ body {
   color: #231f20;
 }
 
-.project-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #231f20;
-  text-align: center;
-  font-style: italic;
-}
 
 .project-description {
   font-size: 16px;
@@ -315,11 +306,7 @@ body {
   line-height: 1.6;
 }
 
-.project-technologies {
-  font-size: 16px;
-  margin-bottom: 15px;
-  color: #231f20;
-}
+
 
 .project-links a {
   margin-right: 10px;
@@ -338,12 +325,73 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
+*/
+
+.project-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  padding: 0 20px;
+}
 
 .project-screenshot {
-  width: 800px;
-  height: 650px;
+  display: block;
+  margin: 20px auto;
+  width: 600px;
+  height: 450px;
   object-fit: contain;
-} */
+}
+
+/* Assuming the class name for the project-technologies section is 'project-technologies' */
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-technologies-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.technology-tag {
+  padding: 8px 16px;
+  background-color: #18b0c5;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.technology-tag:hover {
+  background-color: #1ea3b7;
+}
+
+.project-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #18b0c5;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.project-long-description {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0 100px;
+}
 
 /* Global styles for the Contact component */
 .contact-container {
