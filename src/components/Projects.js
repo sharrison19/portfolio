@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Projects = ({ projectsData }) => {
   return (
-    <div className="projects-container">
+    <div name="projectsSection" className="projects-container">
       <h2 className="projects-header">Projects</h2>
       <div className="projects-list-container">
         {projectsData.map((project) => (

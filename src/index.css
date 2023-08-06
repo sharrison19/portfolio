@@ -9,12 +9,22 @@ body {
 .navbar {
   background-color: #231f20;
   padding: 10px 0;
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.nav-left {
+  width: 50%;
+}
+.nav-right {
+  width: 50%;
 }
 
 .navbar-brand {
@@ -26,14 +36,18 @@ body {
   justify-content: center;
 }
 
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
 .navbar-links {
   list-style: none;
   display: flex;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
 
-.nav-item a {
+.nav-item {
   margin: 0 20px;
   color: #18b0c5;
   font-size: 20px;
@@ -41,13 +55,40 @@ body {
   text-decoration: none;
 }
 
-.nav-item a:hover {
-  color: #cfd0d0;
+.active {
+  color: #18b0c5;
+  text-decoration: none;
 }
 
-/* Align the navbar links to the right */
+.active:hover {
+  color: #cfd0d0;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #cfd0d0;
+  cursor: pointer;
+}
+
 .navbar-links {
   margin-left: auto;
+  display: inline-flex;
+}
+
+.social-icons {
+  float: right;
+  margin-right: 20px;
+}
+
+.social-icon {
+  color: #cfd0d0;
+  font-size: 24px;
+  margin: 0 20px;
+}
+
+.social-icon:hover {
+  color: #18b0c5;
+  cursor: pointer;
 }
 
 /* Home component */
@@ -119,7 +160,7 @@ body {
 
 .about-container {
   padding: 20px;
-  background-color: #231f20;
+  background-color: #f9f9f9;
   min-height: 1000px;
 }
 
@@ -131,28 +172,29 @@ body {
 
 .about-heading {
   color: #18b0c5;
+  font-size: 40px;
+  text-align: center;
+}
+
+.about-skills-heading {
+  color: #18b0c5;
+  font-size: 35px;
+  text-align: center;
 }
 
 .about-passion {
   font-size: 18px;
   font-style: italic;
-  color: #cfd0d0;
-  margin-bottom: 20px;
+  color: #231f20;
+  margin: 0 auto 30px auto;
   line-height: 1.6;
   font-weight: bold;
   text-align: center;
+  width: 80%;
 }
 
 .education {
   color: #18b0c5;
-}
-
-.about-passion::before {
-  content: "✨ ";
-}
-
-.about-passion::after {
-  content: " ✨";
 }
 
 .skills-list {
@@ -190,7 +232,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   max-width: 1000px;
-  margin: auto;
+  margin: 30px auto;
   box-shadow: 10px 8px 0 -4px rgba(0, 0, 0, 0.5);
   background-color: #cfd0d0;
   border-radius: 10px;
@@ -207,7 +249,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 800px;
+  min-height: 1000px;
   background-color: #cfd0d0;
 }
 
@@ -285,48 +327,6 @@ body {
   z-index: 0;
 }
 
-/* .projects-container {
-  padding: 40px 20px 40px 20px;
-  background-color: #18b0c5;
-}
-
-.project-item {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
-  color: #231f20;
-}
-
-
-.project-description {
-  font-size: 16px;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-
-
-.project-links a {
-  margin-right: 10px;
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-.project-links a:hover {
-  color: #0056b3;
-}
-
-.project-screenshot-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-*/
-
 .project-container {
   width: 90%;
   margin-left: auto;
@@ -336,6 +336,13 @@ body {
   padding: 0 20px;
 }
 
+.project-background {
+  background-image: url("images/background2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
 .project-screenshot {
   display: block;
   margin: 20px auto;
@@ -343,8 +350,6 @@ body {
   height: 450px;
   object-fit: contain;
 }
-
-/* Assuming the class name for the project-technologies section is 'project-technologies' */
 
 .project-technologies {
   display: flex;
@@ -391,40 +396,41 @@ body {
   line-height: 1.6;
   color: #333333;
   margin: 0 100px;
+  padding-bottom: 50px;
 }
 
 /* Global styles for the Contact component */
 .contact-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   background-image: url("images/contactbackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 500px;
-  padding: 0 60px;
+  min-height: 900px;
+  padding: 50px;
 }
 
 .contact-content-container {
-  background-image: linear-gradient(
-    rgba(112, 88, 68, 0.9),
-    rgba(112, 88, 68, 0.9)
-  );
+  background-color: rgba(112, 88, 68, 0.9);
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .contact-heading {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #d4bfa3;
 }
 
 .contact-info {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: #d8d9ea;
 }

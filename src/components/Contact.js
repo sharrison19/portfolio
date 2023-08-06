@@ -5,11 +5,11 @@ const Contact = () => {
   const github = "https://github.com/sharrison19";
 
   return (
-    <div className="contact-container">
+    <div name="contactSection" className="contact-container">
       <div className="contact-content-container">
         <h2 className="contact-heading">Contact Information</h2>
         <div className="contact-links">
-          <p className="contact-info">Name: Sean Harrison</p>
+          <p className="contact-info">Sean Harrison</p>
           <p className="contact-info">Email: seanjharrison1993@gmail.com</p>
           <p className="contact-info">
             LinkedIn:{" "}
