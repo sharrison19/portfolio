@@ -158,7 +158,7 @@ const projectsData = [
         </p>
         <img
           src={seasthedayMarineWeather}
-          alt="Reel Northeast Marine Weather"
+          alt="Seas the Day Marine Weather"
           className="project-screenshot"
         />
         <p>
@@ -171,7 +171,7 @@ const projectsData = [
         </p>
         <img
           src={seasthedayTides}
-          alt="Reel Northeast Tides"
+          alt="Seas the Day Tides"
           className="project-screenshot"
         />
         <p>

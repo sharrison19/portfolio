@@ -44,7 +44,7 @@ const About = () => {
   ];
 
   return (
-    <div name="aboutSection" className="about-container">
+    <div className="about-container">
       <div className="about-profile">
         <div className="about-content">
           <h3 className="about-heading">About Me</h3>

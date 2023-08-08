@@ -4,7 +4,7 @@ import Pulse from "react-reveal/Pulse";
 
 const Home = () => {
   return (
-    <div name="homeSection" className="home-container">
+    <div className="home-container">
       <Pulse>
         <img src={profilePicture} alt="Profile" className="profile-image" />
       </Pulse>

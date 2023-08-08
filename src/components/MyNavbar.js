@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import initials from "../images/initials.jpg";
-import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -9,34 +9,18 @@ function MyNavbar() {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-left">
-          <Link to="homeSection" smooth={true} offset={50} duration={500}>
+          <Link to="/">
             <img src={initials} alt="initials" className="navbar-brand" />
           </Link>
           <ul className="navbar-links">
             <li className="nav-item">
-              <Link to="aboutSection" smooth={true} offset={-80} duration={400}>
-                About
-              </Link>
+              <Link to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="projectsSection"
-                smooth={true}
-                offset={-80}
-                duration={400}
-              >
-                Projects
-              </Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="contactSection"
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Contact
-              </Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
