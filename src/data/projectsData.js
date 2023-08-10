@@ -1,13 +1,13 @@
 const contactsbackground = require("../images/contactsappbackground.png");
 const reelnortheastbackground = require("../images/reelnortheastbackground.jpg");
 const seasthedaybackground = require("../images/seasthedaybackground.jpg");
-const rneforum = require("../images/rneforum.png");
-const rnehome = require("../images/rnehome.png");
-const rnethread = require("../images/rnethread.png");
-const rnespecies = require("../images/rnespecies.png");
-const rnestate = require("../images/rnestate.png");
-const rnestates = require("../images/rnestates.png");
-const rneprofile = require("../images/rneprofile.png");
+const rneforum = require("../images/rneforum.webp");
+const rnehome = require("../images/rnehomewebp.webp");
+const rnethread = require("../images/rnethread.webp");
+const rnespecies = require("../images/rnespecies.webp");
+const rnestate = require("../images/rnestate.webp");
+const rnestates = require("../images/rnestates.webp");
+const rneprofile = require("../images/rneprofile.webp");
 const contactsappListExample = require("../images/contactsapp1.png");
 const contactsappAddContact = require("../images/contactsapp2.png");
 const contactsappLogin = require("../images/contactsapp3.png");
@@ -23,8 +23,8 @@ const projectsData = [
     shortDescritpion:
       "Connect with anglers, explore captivating fish species, and engage in interactive discussions. Join the thriving community and elevate your fishing experience!",
     longDescription: (
-      <div>
-        <p>
+      <div className="project-ld">
+        <p className="project-para">
           Reel Northeast is a fishing forum website where anglers can connect,
           share fishing experiences, and exchange tips and tricks. The
           application offers secure user authentication using JWT (JSON Web
@@ -38,7 +38,7 @@ const projectsData = [
           alt="Reel Northeast Home"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           The heart of Reel Northeast, the Forum page, provides a thriving
           community for fishing enthusiasts to engage in discussions and share
           their valuable fishing experiences. The user-friendly interface offers
@@ -52,7 +52,7 @@ const projectsData = [
           alt="Reel Northeast Forum"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           One of the standout features of the forum application backend is its
           implementation of a recursive commenting system, allowing users to
           engage in multi-level discussions through comments and replies. This
@@ -64,7 +64,7 @@ const projectsData = [
           alt="Reel Northeast Thread"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           The State page enhances the forum application's potential by
           dynamically fetching and displaying the most recent threads related to
           the selected state. With an intuitive interface showcasing essential
@@ -85,7 +85,7 @@ const projectsData = [
           alt="Reel Northeast State"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           On the other hand, the Species page takes users on an immersive
           journey through the captivating world of fish species. The species
           cards feature a stunning flip animation, with an enticing image of the
@@ -100,7 +100,7 @@ const projectsData = [
           alt="Reel Northeast Species"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           The Reel Northeast Profile page allows anglers to create and manage
           their profiles, enabling them to update their information, connect
           their social media accounts, and upload profile pictures using
@@ -111,7 +111,7 @@ const projectsData = [
           alt="Reel Northeast Profile"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           Together, these pages elevate the forum application's potential,
           providing a rich and rewarding experience for users.
         </p>
@@ -142,14 +142,14 @@ const projectsData = [
       "Embark on nautical adventures with this marine weather app! Stay ahead of tides and navigate smoothly with hourly forecasts for your ocean pursuits.",
     longDescription: (
       <div>
-        <p>
+        <p className="project-para">
           Seas the Day is an advanced marine weather application that empowers
           users with real-time weather insights for coastal regions and
           waterways. This professional-grade app harnesses the power of the
           World Weather Online API to provide accurate and up-to-date marine
           weather data, ensuring safe and informed ocean adventures.
         </p>
-        <p>
+        <p className="project-para">
           Seamlessly integrated with the Google Maps API, Seas the Day offers an
           intuitive map interface, enabling users to effortlessly select their
           desired locations for weather exploration. With just a click on the
@@ -161,7 +161,7 @@ const projectsData = [
           alt="Seas the Day Marine Weather"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           The user-friendly interface presents two key features: Marine Weather
           and Tides. In the Marine Weather section, users receive comprehensive
           data, including temperature, swell height, wind speed, visibility, and
@@ -174,21 +174,21 @@ const projectsData = [
           alt="Seas the Day Tides"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           As users interact with the map and explore different regions, the app
           dynamically updates the displayed marine weather and tide data,
           ensuring real-time accuracy. Behind the scenes, the app employs the
           secure World Weather Online API, utilizing the provided API key to
           fetch and process data efficiently.
         </p>
-        <p>
+        <p className="project-para">
           Seas the Day has been crafted with a focus on professionalism, making
           it a valuable tool for ocean enthusiasts, marine industry
           professionals, and water sports enthusiasts alike. The app's sturdy
           design, seamless functionality, and responsiveness exemplify its
           suitability for diverse professional use cases.
         </p>
-        <p>
+        <p className="project-para">
           Elevate your maritime experiences and make well-informed decisions
           with Seas the Day. Stay ahead of weather patterns, plan your ocean
           pursuits with confidence, and navigate smoothly through coastal
@@ -225,7 +225,7 @@ const projectsData = [
       "Connect with contacts, manage personal details, and streamline communication with ease and confidence.",
     longDescription: (
       <div>
-        <p>
+        <p className="project-para">
           Explore the Contact Manager app, a platform for seamless contact
           management. Effortlessly organize and access vital contact
           information, including names, emails, phone numbers, websites, and
@@ -235,7 +235,7 @@ const projectsData = [
           Tokens), data remains confidential and accessible only to authorized
           users.
         </p>
-        <p>
+        <p className="project-para">
           The Contact Manager provides a login page that ensures only
           authenticated users can access their contacts securely. Users can sign
           up for a new account or log in with their existing credentials. The
@@ -247,7 +247,7 @@ const projectsData = [
           alt="Contacts Manager Login"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           Once authenticated, users can take advantage of the user-friendly
           interface to perform various contact management operations. The app
           enables users to effortlessly create, edit, and delete contacts,
@@ -261,7 +261,7 @@ const projectsData = [
           alt="Contacts Manager List"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           The Contact Manager also provides a feature-rich "Add Contact" form
           where users can enter detailed information about new contacts. The
           form includes fields for names, emails, phone numbers, websites,
@@ -274,7 +274,7 @@ const projectsData = [
           alt="Contacts Manager Add Contact"
           className="project-screenshot"
         />
-        <p>
+        <p className="project-para">
           Embracing a RESTful API design, the backend efficiently handles
           contact operations, utilizing Express, a flexible Node.js framework.
           CORS integration ensures secure cross-origin communication with the

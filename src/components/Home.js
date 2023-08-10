@@ -1,13 +1,9 @@
-import React from "react";
-import profilePicture from "../images/profilepicture.jpg";
-import Pulse from "react-reveal/Pulse";
+import profilePicture from "../images/profilepicture2.jpg";
 
 const Home = () => {
   return (
     <div className="home-container">
-      <Pulse>
-        <img src={profilePicture} alt="Profile" className="profile-image" />
-      </Pulse>
+      <img src={profilePicture} alt="Profile" className="profile-image" />
       <div className="home-text-container">
         <h2 className="home-heading">Welcome!</h2>
         <p className="home-introduction">
