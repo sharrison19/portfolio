@@ -43,7 +43,7 @@ const About = () => {
 
   return (
     <div className="about-container">
-      <div className="about-content">
+      <div className="about-content-container">
         <h3 className="about-heading">About Me</h3>
         <p className="about-passion">
           My passion for web development was ignited by the opportunity it
@@ -62,6 +62,8 @@ const About = () => {
           motivated, as I embrace the opportunity to continuously grow and
           improve as a developer.
         </p>
+      </div>
+      <div className="skills-list">
         <h3 className="about-skills-heading">Skills</h3>
         <div className="skills-list-container">
           <div className="skills-category-container">

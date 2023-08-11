@@ -283,9 +283,13 @@ body {
 /* About.css */
 
 .about-container {
-  padding: 20px;
   background-color: #4b5353;
   min-height: 100vh;
+}
+
+.about-content-container {
+  background-color: white;
+  padding: 50px 20px;
 }
 
 .about-heading {
@@ -303,9 +307,9 @@ body {
 .about-passion {
   font-size: 18px;
   font-style: italic;
-  color: #f2f2f2;
+  color: black;
   margin: 0 auto 30px auto;
-  line-height: 1.6;
+  line-height: 2;
   font-weight: bold;
   text-align: center;
   width: 70%;
