@@ -198,19 +198,11 @@ const projectsData = [
     ),
 
     technologies: [
-      "React",
+      "HTML",
       "JavaScript",
       "CSS",
       "Google Maps API",
       "World Weather Online API",
-      "JSON",
-      "Fetch API",
-      "Node.js",
-      "Express",
-      "RESTful API",
-      "JWT (JSON Web Tokens)",
-      "MongoDB",
-      "HTML",
     ],
 
     githubLink: "https://github.com/your-github/seas-the-day",
