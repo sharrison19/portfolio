@@ -63,7 +63,7 @@ const About = () => {
           improve as a developer.
         </p>
       </div>
-      <div className="skills-list">
+      <div className="about-skills-list-container">
         <h3 className="about-skills-heading">Skills</h3>
         <div className="skills-list-container">
           <div className="skills-category-container">

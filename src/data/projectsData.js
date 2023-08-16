@@ -205,8 +205,8 @@ const projectsData = [
       "World Weather Online API",
     ],
 
-    githubLink: "https://github.com/your-github/seas-the-day",
-    appLink: "https://seas-the-day-app.com",
+    githubLink: "https://github.com/sharrison19/SeasTheDay",
+    appLink: "https://sharrison19.github.io/SeasTheDay/",
   },
   {
     id: "contactmanager",
@@ -292,8 +292,8 @@ const projectsData = [
       "Middleware",
       "JSON Web Tokens",
     ],
-    githubLink: "https://github.com/your-github/contacts",
-    appLink: "https://contacts-app.com",
+    githubLink: "https://github.com/sharrison19/contacts-node",
+    appLink: "https://contacts-927d563a0569.herokuapp.com/",
   },
 ];
 
